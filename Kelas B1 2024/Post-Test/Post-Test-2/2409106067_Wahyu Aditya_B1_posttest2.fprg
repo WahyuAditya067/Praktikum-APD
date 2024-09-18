@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="tes psottest2"/>
+        <attribute name="authors" value="iwanw"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-18 10:17:09 PM"/>
+        <attribute name="created" value="aXdhbnc7SFAxNDsyMDI0LTA5LTE3OzA5OjExOjQ2IFBNOzIwOTM="/>
+        <attribute name="edited" value="aXdhbnc7SFAxNDsyMDI0LTA5LTE4OzEwOjE3OjA5IFBNOzY7MjIwNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nama" type="String" array="False" size=""/>
+            <declare name="umur" type="Integer" array="False" size=""/>
+            <declare name="tinggibadan, beratbadan, total" type="Integer" array="False" size=""/>
+            <declare name="jeniskelamin" type="Boolean" array="False" size=""/>
+            <output expression="&quot;Masukkan nama&quot;" newline="True"/>
+            <input variable="nama"/>
+            <output expression="&quot;Masukkan Umur&quot;" newline="True"/>
+            <input variable="umur"/>
+            <output expression="&quot;Masukkan tinggi badan&quot;" newline="True"/>
+            <input variable="tinggibadan"/>
+            <output expression="&quot;Masukkan Berat badan&quot;" newline="True"/>
+            <input variable="Beratbadan"/>
+            <output expression="&quot;Jenis kelamin anda (true jika laki-laki, false jika perempuan)&quot;" newline="True"/>
+            <input variable="jeniskelamin"/>
+            <if expression="jeniskelamin">
+                <then>
+                    <output expression="&quot;Nama             : &quot; &amp;nama" newline="True"/>
+                    <output expression="&quot;Umur             : &quot;&amp;umur" newline="True"/>
+                    <output expression="&quot;Tinggi badan   : &quot; &amp;tinggibadan" newline="True"/>
+                    <output expression="&quot;Berat badan   : &quot; &amp;Beratbadan" newline="True"/>
+                    <output expression="&quot;Jenis Kelamin  : Laki-laki&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Nama             : &quot; &amp;nama" newline="True"/>
+                    <output expression="&quot;Umur             : &quot;&amp;umur" newline="True"/>
+                    <output expression="&quot;Tinggi badan   : &quot; &amp;tinggibadan" newline="True"/>
+                    <output expression="&quot;Berat badan   : &quot; &amp;Beratbadan" newline="True"/>
+                    <output expression="&quot;Jenis Kelamin  : Perempuan&quot;" newline="True"/>
+                </else>
+            </if>
+            <assign variable="total" expression="umur + tinggibadan + Beratbadan"/>
+            <output expression="&quot;Umur + tinggi badan + berat badan = &quot; &amp;total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

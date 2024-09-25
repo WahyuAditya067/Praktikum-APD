@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="posttest3 setengah jadi"/>
+        <attribute name="authors" value="iwanw"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-24 03:27:05 PM"/>
+        <attribute name="created" value="aXdhbnc7SFAxNDsyMDI0LTA5LTIyOzA3OjQzOjIzIFBNOzIwODc="/>
+        <attribute name="edited" value="aXdhbnc7SFAxNDsyMDI0LTA5LTI0OzAzOjI3OjA1IFBNOzU7MjE5OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="menu" type="Integer" array="False" size=""/>
+            <declare name="panjang, lebar, sisiA, sisiB, sisiC, jari, keliling, luas" type="Real" array="False" size=""/>
+            <output expression="&quot;Menu yang mau dihitung&quot;" newline="True"/>
+            <input variable="Menu"/>
+            <if expression="menu = 1">
+                <then>
+                    <output expression="&quot;Masukkan panjang&quot;" newline="True"/>
+                    <input variable="panjang"/>
+                    <output expression="&quot;Masukkan lebar&quot;" newline="True"/>
+                    <input variable="lebar"/>
+                    <assign variable="keliling" expression="panjang + panjang + lebar + lebar"/>
+                    <output expression="&quot;Keliling segiempat = &quot;&amp;keliling" newline="True"/>
+                </then>
+                <else>
+                    <if expression="menu = 2">
+                        <then>
+                            <output expression="&quot;Masukkan sisi A&quot;" newline="True"/>
+                            <input variable="sisiA"/>
+                            <output expression="&quot;Masukkan sisi B&quot;" newline="True"/>
+                            <input variable="sisiB"/>
+                            <output expression="&quot;Masukkan sisi C&quot;" newline="True"/>
+                            <input variable="sisiC"/>
+                            <assign variable="keliling" expression="sisiA + sisiB + sisiC"/>
+                            <output expression="&quot;Keliling segitiga = &quot;&amp;keliling" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="menu = 3">
+                                <then>
+                                    <output expression="&quot;Masukkan jari-jari&quot;" newline="True"/>
+                                    <input variable="jari"/>
+                                    <assign variable="keliling" expression="3.14 * jari * 2"/>
+                                    <output expression="&quot;Keliling lingkaran adalah = &quot;&amp;keliling" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="menu = 4">
+                                        <then>
+                                            <output expression="&quot;Masukkan panjang&quot;" newline="True"/>
+                                            <input variable="panjang"/>
+                                            <output expression="&quot;Masukkan lebar&quot;" newline="True"/>
+                                            <input variable="lebar"/>
+                                            <assign variable="luas" expression="panjang * lebar"/>
+                                            <output expression="&quot;Luas segiempat = &quot;&amp;luas" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="menu = 5">
+                                                <then>
+                                                    <output expression="&quot;Masukkan alas&quot;" newline="True"/>
+                                                    <input variable="alas"/>
+                                                    <output expression="&quot;Masukkan tinggi&quot;" newline="True"/>
+                                                    <input variable="tinggi"/>
+                                                    <assign variable="luas" expression="0.5 * alas * tinggi"/>
+                                                    <output expression="&quot;Luas segitiga = &quot;&amp;luas" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="menu = 6">
+                                                        <then>
+                                                            <output expression="&quot;Masukkan jari-jari&quot;" newline="True"/>
+                                                            <input variable="jari"/>
+                                                            <assign variable="luas" expression="3.14 * jari * jari"/>
+                                                            <output expression="&quot;Luas lingkaran = &quot;&amp;luas" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <output expression="&quot;Keluar dari aplikasi&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
